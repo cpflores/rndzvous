@@ -4,7 +4,9 @@
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
   <%= f.input :image, label: "Event photo" %>
-  <%= f.input :description, as: :text, input_html: { rows: "3" } %>  
+  <%= f.input :title, as: :text, input_html: { rows: "1" } %>  
+  <%= f.input :location, as: :text, input_html: { rows: "1" } %>  
+  <%= f.input :description, as: :text, input_html: { rows: "9" } %>  
 
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary" %>
