@@ -1,23 +1,26 @@
-<h1>Listing events</h1>
-
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Image</th>
-      <th>Title</th>
-      <th>Location</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-   <%= render @events %>
-  <tbody>
-</table>
-
-<br />
-
-<%= link_to 'New Event', new_event_path %>
+<% if user_signed_in? %>
+  <div class="hero-unit">
+    <h1>Sign up for any of the following events!</h1>
+  </div>
+  <h1>Listing events</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+     <%= render @events %>
+    <tbody>
+  </table>
+  <br/>
+  <%= link_to 'New Event', new_event_path %>
+<% else %>
+  <%= render 'pages/home' %>
+<% end %>
