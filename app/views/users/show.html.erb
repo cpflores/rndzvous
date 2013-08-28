@@ -1,7 +1,12 @@
-<div class="hero-unit">
+<div class="jumbotron">
 	<h2><%= @user.name %></h2>
+  <p class="lead">
+    <%= @user.headline %><br>
+    <%= @user.location %> | <%= @user.interests %><br>
+    <%= @user.college %> | <%= @user.job %> | <%= @user.bday %> | <%= @user.gender %>
+  </p>
 </div>
-
+<hr>
 <h3>Events I created</h3>
 <table class="table table-striped">
   <thead>
