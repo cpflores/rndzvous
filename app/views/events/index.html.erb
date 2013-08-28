@@ -10,6 +10,7 @@
         <th>Title</th>
         <th>Location</th>
         <th>Description</th>
+        <th>Posted by</th>
         <th></th>
         <th></th>
         <th></th>
@@ -17,7 +18,7 @@
     </thead>
     <tbody>
      <%= render @events %>
-    <tbody>
+    </tbody>
   </table>
   <br/>
   <%= link_to 'Add New Event', new_event_path, class: "btn btn-primary btn-large" %>
