@@ -5,7 +5,7 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
-
+    puts "events: <#{@events}>"
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @events }

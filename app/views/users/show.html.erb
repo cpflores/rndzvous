@@ -1,9 +1,13 @@
-<div class="jumbotron">
+<div class="hero">
 	<h2><%= @user.name %></h2>
   <p class="lead">
-    <%= @user.headline %><br>
-    <%= @user.location %> | <%= @user.interests %><br>
-    <%= @user.college %> | <%= @user.job %> | <%= @user.bday %> | <%= @user.gender %>
+    <i><strong><%= @user.headline %></strong></i><br>
+    location: <%= @user.location %><br>
+    interests: <%= @user.interests %><br>
+    college: <%= @user.college %><br>
+    industry: <%= @user.job %><br> 
+    birthday: <%= @user.bday %><br>
+    gender: <%= @user.gender %><br>
   </p>
 </div>
 <hr>
