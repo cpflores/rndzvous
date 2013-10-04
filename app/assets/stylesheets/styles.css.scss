@@ -4,6 +4,10 @@ $baseFontFamily: Oxygen;
 $btnPrimaryBackground: purple;
 $navbarBackgroundHightlight: white;
 
+@import 'bootstrap';
+@import 'bootstrap-responsive'; 
+
+
 .jumbotron {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -19,13 +23,9 @@ $navbarBackgroundHightlight: white;
 	padding-bottom: 20px;
 	}
 
-@import 'bootstrap';
-
 body {
 	padding-top: 60px;
 }
-
-@import 'bootstrap-responsive'; 
 
 
 .footer {
