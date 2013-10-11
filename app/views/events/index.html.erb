@@ -1,9 +1,10 @@
 <% if user_signed_in? %>
   <div class="hero-unit">
-    <h1>Sign up for any of the following events!</h1>
+    <h1>Check out any of the new events!</h1>
   </div>
-  <h1>Listing events</h1>
+ <%= link_to 'Add New Event', new_event_path, class: "btn btn-primary btn-large" %>
   <table class="table table-striped">
+      <br/>
     <thead>
       <tr>
         <th>Image</th>
