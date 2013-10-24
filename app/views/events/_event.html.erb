@@ -3,7 +3,7 @@
   <td><%= event.title %></td>
   <td><%= event.location %></td>
   <td><%= event.description %></td>
-  <td><%= image_tag event.user.gravatar_url %></td>
+  <td><%= image_tag event.user.gravatar_url, class: "img-circle" %></td>
   <td><strong><%= link_to event.user.name, event.user %></strong></td>
   <td><small><%= link_to 'Show', event %></small></td>
   <% if current_user == event.user %>

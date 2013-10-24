@@ -1,5 +1,5 @@
 <div class="hero">
-	<h2><%= @user.name %></h2>
+	<h2><%= image_tag @user.gravatar_url, class: "img-rounded" %> <%= @user.name %></h2>
   <p class="lead">
     <i><strong><%= @user.headline %></strong></i><br>
     location: <%= @user.location %><br>
