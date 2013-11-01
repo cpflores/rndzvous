@@ -2,7 +2,7 @@
   <div class="hero-unit">
     <h1>Check out any of the new events!</h1>
   </div>
- <%= link_to 'Add New Event', new_event_path, class: "btn btn-primary btn-large" %>
+ 
   <table class="table table-striped">
       <br/>
     <thead>
@@ -24,7 +24,7 @@
     </tbody>
   </table>
   <br/>
-  <%= link_to 'Add New Event', new_event_path, class: "btn btn-primary btn-large" %>
+  
 <% else %>
   <%= render 'pages/home' %>
 <% end %>

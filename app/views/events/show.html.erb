@@ -1,25 +1,23 @@
+<%= link_to 'Back', events_path %>
+
 <div class="row">
-	<div class="span6 offset3">
-		<div class="well">
-			<p>
-			  <%= @event.title %>
-			</p>
-			<p>
-			  <%= @event.location %>
-			</p>
-			<%= image_tag @event.image %>
-			<p>
-			  <%= @event.description %>
-			</p>
-			<p>
-			  <%= @event.user.name %>
-			</p>
-			<% if current_user == @event.user %>
-				<%= link_to 'Edit', edit_event_path(@event) %> |
-			<% end %>
-			<%= link_to 'Back', events_path %>	
-		</div>
-	</div>	
+	<div class="col-md-offset-2 col-md-8">
+		<div class="panel panel-default">
+			<div class="panel-heading center">
+				<%= image_tag @event.image.url(:medium) %>
+			</div>	
+			<div class="panel-body">
+				<p><%= @event.description %></p>
+				<p><strong><%= @event.user.name if @event.user %></strong></p>
+				<% if @event.user == current_user %>
+					<%= link_to edit_event_path(@event) do %>
+						<span class="glyphicon glyphicon-edit"></span> Edit
+					<% end %>
+					<%=  link_to @event, method: :delete, data: { confirm: 'Are you sure?' }  do %>
+						<span class="glyphicon glyphicon-trash"></span> Delete
+					<% end %>
+				<% end %>
+			</div>
+		</div>	
+	</div>
 </div>
-
-
