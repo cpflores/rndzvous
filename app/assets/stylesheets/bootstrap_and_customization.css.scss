@@ -13,19 +13,23 @@ $jumbotron-bg:              white;
 @import 'bootstrap';
 
 body {
-	padding-top: 60px;
+	padding-top: 45px;
 }
 
 .center {
-     text-align: center;
+	text-align: center;
 }
 
 .navbar-brand {
-     font-weight: bold;
-     font-size: 25px;
-     font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	font-style: italic;
 }
 
+#capid {
+	background: rgba(50, 50, 50, 0.70);
+}
 
-
-
+.jumbotron  {
+	border-radius:0 !important;
+}

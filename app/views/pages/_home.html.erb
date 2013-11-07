@@ -1,3 +1,47 @@
+
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <%= image_tag("bears.jpg", :alt => "bears", class: "img-responsive") %>
+      <div class="carousel-caption">
+        <h2 id="capid">Cheer like a local.</h2>
+      </div>
+    </div>
+  
+		<div class="item">
+      <%= image_tag("skyline.jpg", :alt => "chicago", class: "img-responsive") %>
+      <div class="carousel-caption">
+        <h2 id="capid">Go sightseeing with a new friend.</h2>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag("sue.jpg", :alt => "sue", class: "img-responsive") %>
+      <div class="carousel-caption">
+        <h2 id="capid">Learn the history of your new home.</h2>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
 <div class="jumbotron center">
 	<h1>New to town? You're not alone.</h1>
 	<p class="lead">
@@ -7,4 +51,4 @@
 		<!-- <%= link_to "Join today!", new_user_registration_path, class: "btn btn-primary btn-lg" %> -->
     <%= link_to "Sign up for updates", "http://eepurl.com/H6gfn", class: "btn btn-primary btn-lg" %>
   </p>
-</div>	
+</div>
