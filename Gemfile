@@ -8,6 +8,8 @@ gem "paperclip", "~> 3.4.2"
 gem 'aws-sdk'
 gem 'faker'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
 
 group :production do
 	gem 'pg'
