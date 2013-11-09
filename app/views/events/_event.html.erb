@@ -1,3 +1,6 @@
+<!--
+Old index _event partial
+
 <tr>
   <td><%= link_to image_tag(event.image.url(:medium)), event %></td>
   <td><%= event.title %></td>
@@ -11,3 +14,28 @@
   	<td><small><%= link_to 'Delete', event, method: :delete, data: { confirm: 'Are you sure?' } %></small></td>
   <% end %>
 </tr>
+
+Old index page code
+
+  <table class="table">
+      <br/>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Posted by</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @events.each do |event| %>    
+      <%= render 'event', :event => event %>
+    <% end %>
+    </tbody>
+  </table>
+  <br/>
+-->
